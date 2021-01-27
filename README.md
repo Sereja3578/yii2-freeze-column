@@ -4,11 +4,13 @@
 
 Где-нибудь в коде GridView виджета, во время запуска, добавить код:
 
-if ($this->freezed && $this->freezeOptions) {
+    if ($this->freezed && $this->freezeOptions) {
             $freezeOptions = Json::htmlEncode(array_merge($this->freezeOptions, ['container' => "#{$id}-container"]));
+
             FreezeAsset::register($view);
+
             $view->registerJs("jQuery('#$id-container').freezeGridView('init', $freezeOptions);");
-        }
+    }
 
 Например в виджете GridView унаследованном от kartik, который вы используете в своем проекте.
 

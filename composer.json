@@ -1,0 +1,32 @@
+{
+  "name": "sereja3578/yii2-freeze-column",
+  "description": "Package",
+  "keywords": [
+    "yii2",
+    "gridview"
+  ],
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Ilichev",
+      "email": "sergey.my.activity@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "yiisoft/yii2": "2.*",
+    "kartik-v/yii2-krajee-base": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "sereja3578\\freeze\\": ""
+    }
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}

@@ -42,7 +42,7 @@
      * Возвращает настройки для закрепления
      * @return array
      */
-    public function getFreezeOptions()
+    public function getFreezeOptions() : array
     {
         return [
             'freezeLeftColumns' => $this->getFreezeLeftColumns(),
